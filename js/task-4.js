@@ -5,14 +5,14 @@ loginForm.addEventListener("submit", submitEvent);
 function submitEvent(event){
     event.preventDefault();
     const form = event.target;
-    const email = form.elements.email.value.trim();
-    const password = form.elements.password.value.trim();
+    const user = {}
+    user.email = form.elements.email.value.trim();
+    user.pass = form.elements.password.value.trim();
     
-    if (email === "" || password === "") {
+    if (user.email === "" || user.pass === "") {
         return alert('All form fields must be filled in');
     }
 
-    console.log(`Email is ${email}`);
-    console.log(`Password is ${password}`);
+    console.log(user);
     form.reset();
 }

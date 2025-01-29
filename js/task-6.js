@@ -21,14 +21,17 @@ clear.addEventListener('click', destroyBoxes);
 function createBoxes(amount) {
 
   colorBoxes.innerHTML = '';
+  const fragment = document.createDocumentFragment();
 
   for (let div = 0; div < amount; div++) {
     const colorBox = document.createElement('div');
     colorBox.style.backgroundColor = getRandomHexColor();
     colorBox.style.width = `${30 + div * 10}px`;
     colorBox.style.height = `${30 + div * 10}px`;
-    colorBoxes.append(colorBox);
+    fragment.append(colorBox);
   }
+
+  colorBoxes.append(fragment);
 }
 
 
