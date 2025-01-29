@@ -40,10 +40,17 @@ button {
     height: 40px;
 }
 
+button:last-child{
+    background-color: #FF4E4E;
+}
+
 button:hover{
     background-color: #6C8CFF;
 }
 
+button:last-child:hover{
+    background-color: #FF7070;
+}
 input {
     margin-bottom: 8px;
     height: 40px;
