@@ -26,24 +26,13 @@ const images = [
 ];
 
 const gallery = document.querySelector('.gallery');
-gallery.style.listStyle = 'none';
-gallery.style.margin = '0';
-gallery.style.padding = '0';
-gallery.style.display = 'flex';
-gallery.style.flexWrap = 'wrap';
-gallery.style.columnGap = '24px';
-gallery.style.rowGap = '48px';
-gallery.style.justifyContent = 'center';
-gallery.style.alignItems = 'center';
 
 images.forEach (img => {
   const itemList = document.createElement("li");
   const image = document.createElement("img");
+  image.classList.add(".img")
   image.src = img.url;
   image.alt = img.alt;
-  image.width = 360;
-  image.height = 300;
-  image.style.objectFit = 'cover';
   itemList.append(image);
   gallery.append(itemList);
 })

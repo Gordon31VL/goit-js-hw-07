@@ -1,0 +1,57 @@
+body {
+    font-family: Montserrat, sans-serif;
+    color: #2E2F42;
+
+}
+
+button, input, textarea {
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input {
+    margin-bottom: 8px;
+    height: 40px;
+    width: 360px;
+    padding: 8px 16px;
+    border: solid 1px #808080;
+    border-radius: 4px;
+}
+input:last-child{
+    margin-bottom: 16px;
+}
+
+input:hover{
+    border-color: #000000;
+}
+
+input:active{
+    border-color: #808080;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4E75FF;
+    color: #FFFFFF;
+    font-weight: 500px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 86px;
+    height: 40px;
+}
+
+button:hover{
+    background-color: #6C8CFF;
+}
